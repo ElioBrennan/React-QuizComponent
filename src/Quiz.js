@@ -3,14 +3,14 @@ import React from "react";
 import { Component } from "react";
 
 // Declarations
-const quizData = require("./quiz_data.json").quiz_questions;
+let quizData = require("./quiz_data.json").quiz_questions;
 
 class Quiz extends Component {
   constructor(props) {
     super(props);
-    this.setState({
+    this.state = {
       quiz_position: 1,
-    });
+    };
   }
 
   render() {

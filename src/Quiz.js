@@ -3,7 +3,7 @@ import React from "react";
 import { Component } from "react";
 
 // Declarations
-let quizData = require("./quiz_data.json").quiz_questions;
+let quizData = require("./quiz_data.json")
 
 class Quiz extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class Quiz extends Component {
     return (
       <div>
         <div className="QuizQuestion">
-          <b>{quizData[0].instruction_text}</b>
+          <b>{quizData.quiz_questions[0].instruction_text}</b>
         </div>
       </div>
     );
